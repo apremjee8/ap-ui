@@ -12,13 +12,13 @@ export default function Home() {
     // finally you can pass the animate prop to the motion.div element and set your parameters for how you want it to animate
     <div className='flex flex-col items-center space-y-28 mt-5'>
       <button
-        className='bg-zinc-950 text-white rounded-lg p-3'
+        className='bg-zinc-950 text-white rounded-xl p-3'
         onClick={() => setShouldAnimate((s) => !s)}
       >
         Animate
       </button>
       <motion.div
-        className='h-48 w-48 bg-blue-700 rounded-lg'
+        className='h-48 w-48 bg-blue-700 rounded-xl'
         animate={{ scale: shouldAnimate ? 1.5 : 1, y: shouldAnimate ? -40 : 0 }}
       />
     </div>
